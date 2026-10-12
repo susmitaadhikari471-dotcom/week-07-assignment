@@ -1,0 +1,50 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* [Step 1] Navigation Menu Alignment */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* [Step 2] Horizontal Card Layout */
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+}
+
+/* [Step 3] Fix Image Overflow */
+img {
+    /* width: 1000px; */ /* Old fixed width commented out */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
