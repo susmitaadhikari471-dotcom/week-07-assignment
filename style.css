@@ -1,52 +1,149 @@
-/* General Styling */
+/* General Light Theme Setup */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
-    background-color: #f9f9f9;
+    padding: 0;
+    background-color: #f4f7f6; /* Light background */
+    color: #333333;
 }
 
-/* [Step 1] Navigation Menu Alignment */
-nav {
+/* Header & Navigation */
+header {
     display: flex;
     justify-content: space-between;
-    background-color: #333;
-    padding: 15px 20px;
-    border-radius: 5px;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 15px 40px;
+    color: white;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 15px;
 }
 
 nav a:hover {
-    color: #ffcc00;
+    color: #38bdf8;
 }
 
-/* [Step 2] Horizontal Card Layout */
+.contact-btn {
+    background-color: #0284c7;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.contact-btn:hover {
+    background-color: #0369a1;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+    border-bottom: 1px solid #cbd5e1;
+}
+
+.profile-container img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0284c7;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero-text h1 {
+    margin: 15px 0 5px 0;
+    font-size: 28px;
+    color: #0f172a;
+}
+
+.hero-text p {
+    color: #475569;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.demo-btn {
+    display: inline-block;
+    background-color: #818cf8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.demo-btn:hover {
+    background-color: #6366f1;
+}
+
+.welcome-badge {
+    color: #047857;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Hobbies Section */
+.skills-section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #1e293b;
+}
+
+/* Horizontal Cards Layout using Flexbox */
 .content-wrapper {
     display: flex;
     gap: 20px;
-    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
     background: white;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    border-top: 4px solid #0284c7;
+    text-align: left;
 }
 
-/* [Step 3] Fix Image Overflow */
-img {
-    /* width: 1000px; */ /* Fixed size commented out as required */
-    max-width: 100%;     /* Prevents overflow on smaller screens */
-    width: 250px;        /* Image lai appropriate size ma rakhna lai */
-    height: auto;
-    display: block;
-    border-radius: 5px;
-    margin-top: 15px;
+.card h3 {
+    margin-top: 0;
+    color: #1e293b;
+}
+
+.card p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.5;
 }
