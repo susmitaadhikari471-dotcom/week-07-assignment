@@ -1,4 +1,4 @@
-/* General Reset */
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,7 +11,7 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: #333;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 5px;
 }
 
@@ -42,9 +42,11 @@ nav a:hover {
 
 /* [Step 3] Fix Image Overflow */
 img {
-    /* width: 1000px; */ /* Old fixed width commented out */
-    max-width: 100%;
+    /* width: 1000px; */ /* Fixed size commented out as required */
+    max-width: 100%;     /* Prevents overflow on smaller screens */
+    width: 250px;        /* Image lai appropriate size ma rakhna lai */
     height: auto;
     display: block;
     border-radius: 5px;
+    margin-top: 15px;
 }
