@@ -57,7 +57,7 @@ nav a:hover {
     border-bottom: 1px solid #e2e8f0;
 }
 
-/* Image Fix: Proper Size & Round Shape */
+/* Image Size & Shape Fix */
 .profile-container img {
     /* width: 1000px; */ /* Fixed size commented out as required */
     max-width: 100%;
