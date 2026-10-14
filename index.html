@@ -14,20 +14,20 @@
             scroll-behavior: smooth;
         }
         body {
-            background-color: #0d1117;
-            color: #c9d1d9;
+            background-color: #f4f6f9;
+            color: #24292e;
             line-height: 1.6;
             overflow-x: hidden;
             padding-bottom: 50px;
         }
         header {
-            background: rgba(22, 27, 34, 0.9);
+            background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(10px);
             padding: 18px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -35,10 +35,10 @@
         .logo {
             font-size: 20px;
             font-weight: 700;
-            color: #58a6ff;
+            color: #0366d6;
         }
         nav a {
-            color: #8b949e;
+            color: #586069;
             text-decoration: none;
             margin-left: 20px;
             font-size: 14px;
@@ -46,7 +46,7 @@
             transition: color 0.3s ease;
         }
         nav a:hover {
-            color: #58a6ff;
+            color: #0366d6;
         }
         .hero {
             text-align: center;
@@ -59,20 +59,20 @@
             object-fit: cover;
             border: 3px solid #8a2be2;
             margin-bottom: 20px;
-            box-shadow: 0 0 20px rgba(138, 43, 225, 0.4);
+            box-shadow: 0 0 20px rgba(138, 43, 225, 0.2);
         }
         .hero h1 {
             font-size: 2.5rem;
-            color: #ffffff;
+            color: #24292e;
             margin-bottom: 10px;
         }
         .hero p {
             font-size: 1.1rem;
-            color: #8b949e;
+            color: #586069;
             margin-bottom: 25px;
         }
         .btn {
-            background: linear-gradient(135deg, #8a2be2, #58a6ff);
+            background: linear-gradient(135deg, #8a2be2, #0366d6);
             color: white;
             padding: 12px 28px;
             border: none;
@@ -82,16 +82,16 @@
             text-decoration: none;
             display: inline-block;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 15px rgba(138, 43, 225, 0.4);
+            box-shadow: 0 4px 15px rgba(138, 43, 225, 0.3);
         }
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(88, 166, 255, 0.5);
+            box-shadow: 0 6px 20px rgba(3, 102, 214, 0.4);
         }
         .section-title {
             text-align: center;
             font-size: 1.8rem;
-            color: #ffffff;
+            color: #24292e;
             margin: 50px 0 25px 0;
         }
         .container {
@@ -103,23 +103,24 @@
             padding: 0 20px;
         }
         .card {
-            background: #161b22;
-            border: 1px solid #30363d;
+            background: #ffffff;
+            border: 1px solid #e1e4e8;
             padding: 25px;
             border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.04);
             transition: transform 0.3s ease, border-color 0.3s ease;
         }
         .card:hover {
             transform: translateY(-5px);
-            border-color: #58a6ff;
+            border-color: #0366d6;
         }
         .card h3 {
-            color: #58a6ff;
+            color: #0366d6;
             margin-bottom: 10px;
             font-size: 1.2rem;
         }
         .card p {
-            color: #8b949e;
+            color: #586069;
             font-size: 0.95rem;
             line-height: 1.5;
         }
@@ -131,29 +132,29 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.7);
+            background-color: rgba(0,0,0,0.5);
             backdrop-filter: blur(5px);
             justify-content: center;
             align-items: center;
         }
         .modal-content {
-            background: #161b22;
-            border: 1px solid #58a6ff;
+            background: #ffffff;
+            border: 1px solid #0366d6;
             padding: 30px;
             border-radius: 12px;
             width: 90%;
             max-width: 450px;
             text-align: center;
             position: relative;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         }
         .modal-content h3 {
-            color: #58a6ff;
+            color: #0366d6;
             margin-bottom: 15px;
             font-size: 1.5rem;
         }
         .modal-content p {
-            color: #c9d1d9;
+            color: #24292e;
             margin-bottom: 20px;
             font-size: 1rem;
         }
@@ -175,25 +176,34 @@
     <header>
         <div class="logo">Susmita.dev</div>
         <nav>
-       
+            <a href="#hobbies">Hobbies</a>
+            <a href="#learning">Learning</a>
         </nav>
     </header>
 
     <section class="hero">
         <img src="profile.jpg" alt="Susmita Adhikari" class="profile-img">
-        <h1>Hi, I'm Susmita Adhikari </h1>
+        <h1>Hi, I'm Susmita Adhikari</h1>
         <p>Computer Engineering Student at Seoul Theological University</p>
     </section> 
 
-    <h2 class="section-title" id="hobbies">My Hobbies</h2>
+    <h2 class="section-title" id="hobbies">My Hobbies & Interests</h2>
     <div class="container">
         <div class="card">
-            <h3> Hobbies</h3>
-            <p>Passionate about <strong>travelling</strong>, <strong>trekking</strong>, and <strong>exploring new areas</strong> to discover nature and fresh perspectives.</p>
+            <h3>🌍 Exploring & Outdoors</h3>
+            <p>Passionate about <strong>travelling</strong>, trekking, and exploring new areas to discover nature and fresh perspectives.</p>
         </div>
         <div class="card">
-            <h3>🎬 Entertainment & Drama</h3>
-            <p>Enjoy <strong>watching K-dramas</strong> during free time. Currently loving the gripping story and emotional depth of <strong>Queen of Tears</strong>.</p>
+            <h3>🎵 Music & Drama</h3>
+            <p>Enjoy <strong>listening to music</strong> and <strong>watching K-dramas</strong> during free time. Currently loving the gripping story and emotional depth of <strong>Queen of Tears</strong>.</p>
+        </div>
+    </div>
+
+    <h2 class="section-title" id="learning">Currently Learning</h2>
+    <div class="container">
+        <div class="card">
+            <h3>💻 Coding & Development</h3>
+            <p>Actively expanding knowledge in <strong>programming</strong>, building scalable applications with <strong>Python</strong>, and managing version control and repositories on <strong>GitHub</strong>.</p>
         </div>
     </div>
     
